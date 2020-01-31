@@ -1,5 +1,6 @@
 <?php
 define('USER', 'phpmyadmin');
-define ('PASSWD', '4CB10.1QSs');
+define ('PASSWD', '');
 define ('HOST', 'localhost');
 define ('DB', 'hospitalE2N');
+
