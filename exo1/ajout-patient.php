@@ -3,29 +3,29 @@ require_once 'parametre.php';
 include '../header.php';
 include './form_validation.php';
 //si post du formulaire complété sans erreurs, affichage du résultat
-  if ($isSubmitted && count($errors) == 0) {
-$db = connectDb();
+if ($isSubmitted && count($errors) == 0) {
+    $db = connectDb();
 //REQUETE POUR MODIFIER
-                $req = $dbco->prepare("UPDATE `patients` SET `firstname`= ':firstname'");
-                $req->bindParam(':firstname', $firstname, PDO::PARAM_STR);
-                $req->execute();
-                echo 'Données mises à jour';               
+    $req = $dbco->prepare("UPDATE `patients` SET `firstname`= ':firstname'");
+    $req->bindParam(':firstname', $firstname, PDO::PARAM_STR);
+    $req->execute();
+    echo 'Données mises à jour';
 // variable pour afficher les données souhaité d'un client
-$query = 'INSERT INTO `patients` (`lastname`, `firstname`, `birthdate`, `phone`, `mail`) VALUES (:lastname, :firstname, :birthdate, :phone, :mail)';
+    $query = 'INSERT INTO `patients` (`lastname`, `firstname`, `birthdate`, `phone`, `mail`) VALUES (:lastname, :firstname, :birthdate, :phone, :mail)';
 // Envoie de la requête vers la base de données
-$sth = $db->prepare($query);
+    $sth = $db->prepare($query);
 // éxecution de la requête en liant les variables
-$sth->bindValue( ':lastname', $lastname, PDO::PARAM_STR);
-$sth->bindValue( ':firstname', $firstname, PDO::PARAM_STR);
-$sth->bindValue( ':birthdate', $birthdate, PDO::PARAM_STR);
-$sth->bindValue( ':phone', $phone, PDO::PARAM_STR);
-$sth->bindValue( ':mail', $mail, PDO::PARAM_STR);
-if ($sth->execute()) {
+    $sth->bindValue(':lastname', $lastname, PDO::PARAM_STR);
+    $sth->bindValue(':firstname', $firstname, PDO::PARAM_STR);
+    $sth->bindValue(':birthdate', $birthdate, PDO::PARAM_STR);
+    $sth->bindValue(':phone', $phone, PDO::PARAM_STR);
+    $sth->bindValue(':mail', $mail, PDO::PARAM_STR);
+    if ($sth->execute()) {
         // si le formulaire est rempli sans faute, il nous enverra dans la page 'liste-patient.php'
-    header('Location: http://pdopartie2.com/exo1/liste-patient.php');
-    exit();
+        header('Location: http://pdopartie2.com/exo1/liste-patient.php');
+        exit();
+    }
 }
-  }
 ?>
 <form method="post" action=" ajout-patient.php" class="formParts" novalidate>
     <div class="custom_form justify-content-center">

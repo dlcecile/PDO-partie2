@@ -18,17 +18,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-          <li class="nav-item active  col-3">
-              <a class="nav-link col-2" href="http://pdopartie2.com/exo1/ajout-patient.php">Inscription</a>
+          <li class="nav-item active  col-2">
+              <a class="nav-link " href="http://pdopartie2.com/exo1/ajout-patient.php">Inscription</a>
         </li>
-        <li class="nav-item active  col-3">
-          <a class="nav-link col-2" href="http://pdopartie2.com/exo1/index.php">Index</a>
-        </li>
-         <li class="nav-item active  col-2">
-          <a class="nav-link col-2" href="http://pdopartie2.com/exo1/liste-patient.php">Patients</a>
+        <li class="nav-item active  col-2">
+          <a class="nav-link " href="http://pdopartie2.com/exo1/index.php">Index</a>
         </li>
          <li class="nav-item active  col-2">
-          <a class="nav-link col-2" href="http://pdopartie2.com/exo1/profil-patient.php">Profils</a>
+          <a class="nav-link" href="http://pdopartie2.com/exo1/liste-patient.php">Patients</a>
+        </li>
+         <li class="nav-item active  col-2">
+          <a class="nav-link" href="http://pdopartie2.com/exo1/profil-patient.php">Profils</a>
+        </li>
+         <li class="nav-item active  col-3">
+          <a class="nav-link" href="http://pdopartie2.com/exo1/rendezvous.php">Rendez-Vous</a>
         </li>
       </ul>
     </div>

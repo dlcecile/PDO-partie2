@@ -3,16 +3,13 @@ img{
     max-height: 600px;
     background-color: black;
 }
-
 .container{
     display:flex;
     flex-direction: column;
 }
-
 .container{
   margin: auto;
 }
-
 p{
   font-size: 30px;
   font-weight: bold;
