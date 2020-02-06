@@ -12,17 +12,23 @@
     <img src="./assets/img/doctor.png" alt="doctor">
     </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Partie2</a>
+    <a class="navbar-brand" href="#">Gestion</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-          <li class="nav-item active  col-2">
-              <a class="nav-link col-2" href="http://pdopartie2.com/exo1/ajout-patient.php">Patient</a>
+          <li class="nav-item active  col-3">
+              <a class="nav-link col-2" href="http://pdopartie2.com/exo1/ajout-patient.php">Inscription</a>
         </li>
-        <li class="nav-item active  col-2">
+        <li class="nav-item active  col-3">
           <a class="nav-link col-2" href="http://pdopartie2.com/exo1/index.php">Index</a>
+        </li>
+         <li class="nav-item active  col-2">
+          <a class="nav-link col-2" href="http://pdopartie2.com/exo1/liste-patient.php">Patients</a>
+        </li>
+         <li class="nav-item active  col-2">
+          <a class="nav-link col-2" href="http://pdopartie2.com/exo1/profil-patient.php">Profils</a>
         </li>
       </ul>
     </div>
